@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "plugins": [
+    {
+      "id": "billion-context-pi",
+      "name": "billion-context-pi",
+      "description": "Context compression and delegation extension for Pi.",
+      "source": "https://github.com/ranxianglei/billion-context-pi",
+      "compatibility": "pi-only",
+      "agents": ["pi"],
+      "license": "MIT",
+      "install": {"pi": "pi install npm:billion-context-pi"}
+    },
+    {
+      "id": "pi-web-access",
+      "name": "pi-web-access",
+      "description": "Web search and fetching for Pi, also available as an MCP server.",
+      "source": "https://github.com/nicobailon/pi-web-access",
+      "compatibility": "multi-agent",
+      "agents": ["pi", "mcp"],
+      "license": "MIT",
+      "install": {
+        "pi": "pi install npm:pi-web-access",
+        "mcp": "https://github.com/nicobailon/pi-web-access#readme"
+      }
+    },
+    {
+      "id": "rpiv-ask-user-question",
+      "name": "rpiv-ask-user-question",
+      "description": "Interactive question UI extension for Pi.",
+      "source": "https://github.com/juicesharp/rpiv-mono/tree/main/packages/rpiv-ask-user-question",
+      "compatibility": "pi-only",
+      "agents": ["pi"],
+      "license": "MIT",
+      "install": {"pi": "pi install npm:@juicesharp/rpiv-ask-user-question"}
+    },
+    {
+      "id": "pi-sandbox",
+      "name": "pi-sandbox",
+      "description": "Sandboxed tool execution for Pi.",
+      "source": "https://github.com/carderne/pi-sandbox",
+      "compatibility": "pi-only",
+      "agents": ["pi"],
+      "license": "MIT",
+      "install": {"pi": "pi install npm:pi-sandbox"}
+    },
+    {
+      "id": "pi-open-tui",
+      "name": "pi-open-tui",
+      "description": "Terminal interface customization for Pi.",
+      "source": "https://github.com/DaybreakDear/pi-open-tui",
+      "compatibility": "pi-only",
+      "agents": ["pi"],
+      "license": "MIT",
+      "install": {"pi": "pi install https://github.com/DaybreakDear/pi-open-tui"}
+    }
+  ]
+}
